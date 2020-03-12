@@ -41,12 +41,15 @@ a {
   margin-right: 100px;
   margin-bottom: 100px;
 }
-.navigation > li:last-child {
+.navigation li:last-child {
   margin-right: 0px;
 }
 
 .navigation a {
   text-transform: uppercase;
+}
+main {
+  padding-bottom: 75px;
 }
 
 .posts-wrap {
@@ -99,5 +102,4 @@ a {
   border: 1px solid;
   font-size: 20px;
   padding: 20px 35px;
-  margin-bottom: 75px;
 }
