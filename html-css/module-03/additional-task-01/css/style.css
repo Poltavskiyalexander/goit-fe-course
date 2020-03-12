@@ -1,0 +1,61 @@
+/* @import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300&display=swap"); */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  position: relative;
+  max-width: 1000px;
+  padding: 0 50px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container-nav {
+  margin: 0px 0px 25px;
+  padding: 75px 30px;
+}
+
+.nav-list {
+  width: 100%;
+  text-align: justify;
+  font-size: 0;
+}
+
+.nav-list:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  /* if you need IE6/7 support */
+  zoom: 1;
+  *display: inline;
+  vertical-align: bottom;
+}
+
+.nav-item {
+  display: inline-block;
+}
+.nav-link {
+  font-size: 14px;
+  color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: #03a9f4;
+}
