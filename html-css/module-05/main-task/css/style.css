@@ -125,7 +125,7 @@ section {
 }
 
 .slaider {
-  background-image: url(/html-css/module-05/main-task/img/img-slaider-01.jpg);
+  background-image: url("../img/img-slaider-01.jpg");
   background-position: center;
   background-size: cover;
   height: 600px;
@@ -186,6 +186,9 @@ section {
   font-size: 24px;
   line-height: 1.367;
   font-weight: 300;
+}
+.products {
+  background-color: rgb(233, 240, 253);
 }
 .card {
   float: left;
