@@ -34,8 +34,8 @@ ol {
 }
 
 .wrap-v-center {
-  min-height: 130px;
-  padding-bottom: 90px;
+  min-height: 180px;
+  padding-bottom: 70px;
   display: flex;
   align-items: center;
 }
@@ -56,6 +56,7 @@ ol {
 
 .logo {
   font-size: 30px;
+  line-height: 1;
   font-weight: 900;
 }
 
@@ -141,6 +142,35 @@ ol {
   padding: 0 10px 0 80px;
   margin-bottom: 90px;
 }
+.services-item::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  top: 0;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+}
+
+.icon-01::before {
+  background-image: url(../img/services-icon-01.png);
+}
+.icon-02::before {
+  background-image: url(../img/services-icon-02.png);
+}
+.icon-03::before {
+  background-image: url(../img/services-icon-03.png);
+}
+.icon-04::before {
+  background-image: url(../img/services-icon-04.png);
+}
+.icon-05::before {
+  background-image: url(../img/services-icon-05.png);
+}
+.icon-06::before {
+  background-image: url(../img/services-icon-06.png);
+}
+
 .services-head,
 .card-futer-head {
   color: #333333;
@@ -206,6 +236,7 @@ ol {
 }
 .team-card {
   margin-bottom: 90px;
+  width: 380px;
 }
 
 .team-card-img {
@@ -250,7 +281,7 @@ ol {
   height: 100%;
 }
 .team-card-hover-wrap {
-  width: 380px;
+  width: 100%;
   height: 470px;
   margin-bottom: 30px;
 }
@@ -291,8 +322,8 @@ ol {
   -webkit-background-clip: text;
   background-clip: text;
 
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 240s linear infinite;
+  text-fill-color: transparent;
+  animation: aitf 240s linear infinite;
 
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
