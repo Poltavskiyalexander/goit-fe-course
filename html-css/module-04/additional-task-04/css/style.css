@@ -65,6 +65,9 @@ main {
   line-height: 20px;
   counter-increment: number;
   content: counter(number, upper-roman) ". ";
+  border: 3px solid #eb17eb;
+  width: 50px;
+  height: 50px;
 }
 
 .item-link:hover,

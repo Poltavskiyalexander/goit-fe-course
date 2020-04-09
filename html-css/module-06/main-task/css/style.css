@@ -457,3 +457,12 @@ input:valid:focus {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+/*  */
+.logo {
+  transition: opacity 1.2s linear;
+  opacity: 0.2;
+}
+.logo:hover {
+  opacity: 1;
+}

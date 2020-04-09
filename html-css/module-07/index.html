@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <nav class="header-nav">
+            <div class="logo">
+              <a class="logo-link" href="#">
+                <img
+                  src="img/Logo.png"
+                  alt=""
+                  onerror="document.getElementById('logo-link-text').style.display='inline'"
+                  onload="document.getElementById('logo-link-text').style.display='none'"
+                />
+                <span id="logo-link-text" class="logo-link-text">Golden</span>
+              </a>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-item-link" href="#">home</a></li>
+              <li class="nav-item"><a class="nav-item-link" href="#">services</a></li>
+              <li class="nav-item"><a class="nav-item-link" href="#">portfolio</a></li>
+              <li class="nav-item"><a class="nav-item-link" href="#">about</a></li>
+              <li class="nav-item"><a class="nav-item-link" href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="services">
+          <div class="container">
+            <h2 class="head">Services <br /><span class="sub-head">Proin iaculis purus consequat sem cure. </span></h2>
+            <ul class="services-list">
+              <li class="services-item services-01">
+                <h3 class="services-item-head">E-Commerce</h3>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                </p>
+              </li>
+              <li class="services-item services-02">
+                <h3 class="services-item-head">Responsive Web</h3>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                </p>
+              </li>
+              <li class="services-item services-03">
+                <h3 class="services-item-head">Web Security</h3>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="container">
+            <h2 class="head">Contact us <br /><span class="sub-head">Proin iaculis purus consequat sem cure.</span></h2>
+            <form action="#">
+              <fieldset>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" placeholder=" Your name*" required name="name" />
+                    <input type="email" placeholder="Your email*" required name="email" />
+                    <input type="text" placeholder=" Subject" name="subject" />
+                  </div>
+                  <div class="col">
+                    <textarea placeholder="Your message*" required name="message"></textarea>
+                  </div>
+                </div>
+                <button class="btn-send" type="submit">send message</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
