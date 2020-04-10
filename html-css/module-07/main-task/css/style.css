@@ -92,13 +92,13 @@ section {
 
 .head {
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 700;
 
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
 
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   line-height: 1;
 }
 .services .head {
@@ -112,6 +112,7 @@ section {
   font-size: 16px;
   text-align: center;
   text-transform: initial;
+  margin-bottom: 75px;
 }
 
 .services .sub-head {
@@ -122,8 +123,6 @@ section {
   justify-content: space-between;
 }
 .services-item {
-  position: relative;
-  padding-top: 90px;
   width: 290px;
   text-align: center;
 
@@ -135,33 +134,31 @@ section {
   color: #666666;
 }
 
-.services-item::after {
+.services-item::before {
+  margin-bottom: 20px;
   content: "";
+  display: inline-block;
   border: 3px solid #fed136;
   border-radius: 50%;
-  position: absolute;
   width: 72px;
   height: 72px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   background-position: center;
   background-repeat: no-repeat;
 }
-.services-01::after {
+.services-01::before {
   background-image: url(../img/services-icon-01.png);
 }
-.services-02::after {
+.services-02::before {
   background-image: url(../img/services-icon-02.png);
 }
-.services-03::after {
+.services-03::before {
   background-image: url(../img/services-icon-03.png);
 }
 
 .services-item-head {
   font-size: 18px;
   font-family: "Montserrat";
-  font-weight: 900;
+  font-weight: 700;
   color: #333333;
   margin-bottom: 10px;
 }
@@ -205,7 +202,7 @@ textarea {
 
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   color: #000;
@@ -244,7 +241,7 @@ textarea:valid:not(:placeholder-shown) {
 .btn-send {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 18px;
   border-radius: 4px;
   width: 240px;
