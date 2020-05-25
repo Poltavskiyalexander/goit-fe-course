@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    flex-basis: 380px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 90px;
+
+    &--services-pading {
+      padding: 0 10px 0 80px;
+    }
+  }
+}

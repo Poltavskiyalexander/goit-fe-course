@@ -1,0 +1,148 @@
+.card {
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__foto {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(252, 227, 138, 0.75) 0%,
+      rgba(243, 129, 129, 0.75) 100%
+    );
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    background-color: #fce38a;
+
+    transition: all 0.2s linear;
+    transition-delay: 0.3s;
+
+    & svg {
+      display: inline-block;
+      vertical-align: middle;
+      fill: #f38181;
+      transition: all 0.2s linear;
+      transition-delay: 0.3s;
+    }
+
+    &:hover {
+      background-color: #f38181;
+
+      & svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__social-link + &__social-link {
+    background-clip: padding-box;
+    border-left: 1px solid transparent;
+  }
+
+  &__hover-wrap {
+    width: 100%;
+    height: 470px;
+    margin-bottom: 30px;
+
+    &:hover {
+      & .card__img {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 0px 0px #95e1d3;
+
+        & .card__overlay {
+          opacity: 1;
+        }
+      }
+
+      & .card__social-link {
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+
+  &__icon {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 40px;
+      top: 0;
+      transform: translateX(-50%);
+      width: 32px;
+      height: 32px;
+    }
+
+    &--01::before {
+      background-image: url(../images/services-icon-01.svg#icon);
+    }
+
+    &--02::before {
+      background-image: url(../images/services-icon-02.svg#icon);
+    }
+
+    &--03::before {
+      background-image: url(../images/services-icon-03.svg#icon);
+    }
+
+    &--04::before {
+      background-image: url(../images/services-icon-04.svg#icon);
+    }
+
+    &--05::before {
+      background-image: url(../images/services-icon-05.svg#icon);
+    }
+
+    &--06::before {
+      background-image: url(../images/services-icon-06.svg#icon);
+    }
+  }
+}
+
+.card-futer {
+  &--center {
+    text-align: center;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  &__head {
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

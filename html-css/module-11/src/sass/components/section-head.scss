@@ -1,0 +1,52 @@
+.section-head {
+  color: #333333;
+  text-align: center;
+
+  &--white {
+    color: #ffffff;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 90px;
+    padding: 0 120px;
+  }
+
+  &__title {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    &--big-font {
+      line-height: 1;
+      font-size: 72px;
+    }
+  }
+
+  &__sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    &--big-font {
+      font-size: 140px;
+      line-height: 1;
+      padding-top: 40px;
+      display: inline-block;
+    }
+
+    &--underline::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #ff9999;
+      margin: 50px auto 65px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'base/variables.scss';
+@import 'base/functions';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/normalize.scss';
+@import 'layout/common.scss';
+@import 'components/section-head.scss';
+@import 'components/animated-link.scss';
+@import 'components/list.scss';
+@import 'components/card.scss';
+@import 'components/form-subscribe.scss';
+@import 'layout/header.scss';
+@import 'layout/banner.scss';
+@import 'layout/services.scss';
+@import 'layout/team.scss';
+@import 'layout/footer.scss';
